@@ -90,7 +90,7 @@ public class BasicInheritancePractice{
         // - Buat object MobilSport dengan parameter:
         //   merk: "Ferrari", warna: "Merah", tahun: 2024, jumlahPintu: 2,
         //   jenisBahanBakar: "Bensin", turbo: true, kecepatanMaksimal: 320
-        MobilSport mobilSport = new MobilSport("Ferrari", "Merah", 2024, 2, "Bensin", true, 320);
+        Mobilsport mobilSport = new Mobilsport("Ferrari", "Merah", 2024, 2, "Bensin", true, 320);
         // - Panggil method displayInfo()
         mobilSport.displayInfo();
         // - Panggil method aktifkanTurbo()
@@ -115,7 +115,7 @@ public class BasicInheritancePractice{
 
         // Latihan 6: Menggunakan instanceof
         // - Cek apakah mobilSport instanceof MobilSport
-        System.out.println("mobilSport instanceof MobilSport: " + (mobilSport instanceof MobilSport));
+        System.out.println("mobilSport instanceof MobilSport: " + (mobilSport instanceof Mobilsport));
         // - Cek apakah mobilSport instanceof Mobil
         System.out.println("mobilSport instanceof Mobil: " + (mobilSport instanceof Mobil));
         // - Cek apakah mobilSport instanceof Kendaraan

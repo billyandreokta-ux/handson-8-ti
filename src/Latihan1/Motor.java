@@ -8,21 +8,30 @@ public class Motor extends Kendaraan {
     // Constructor
     public Motor(String merk, String warna, int tahunProduksi, String jenisMotor) {
         // TODO: Implementasi constructor dengan super
+        super(merk, warna, tahunProduksi);
+        System.out.println("Constructor Motor dipanggil");
+        this.jenisMotor = jenisMotor;
+        this.hadRemCakram = true; // nilai default, bisa diubah dengan setter nanti
     }
 
     // Override method
     @Override
     public void displayInfo() {
         // TODO: Implementasi dengan memanggil super dan menambahkan info Motor
+        super.displayInfo();
+        System.out.println("Jenis Motor: " + jenisMotor);
+        System.out.println("Rem Cakram: " + (hadRemCakram ? "Ya" : "Tidak"));
     }
 
     @Override
     public void klakson() {
         // TODO: Print "Tiiin tiiin! (suara motor)"
+        System.out.println("Tiiin tiiin! (suara motor)");
     }
 
     // Method khusus Motor
     public void lakukanWheely() {
         // TODO: Print "[merk] melakukan wheelie!"
+        System.out.println(merk + " melakukan wheelie!");
     }
 }

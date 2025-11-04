@@ -6,9 +6,8 @@
 **Mata Kuliah:** Pemrograman Berorientasi Objek
 
 ## Catatan Pembelajaran
-1. **AccessModifiersPractice.java** – Belajar membatasi akses data dengan `public`, `private`, dan `protected`.
-2. **ConstructorPractice.java** – Belajar membuat dan memakai constructor untuk memberi nilai awal objek.
-3. **InstanceMembersPractice.java** – Belajar atribut dan method yang dimiliki tiap objek.
-4. **IntroToOOPPractice.java** – Mengenal dasar OOP: class, object, dan konsep utamanya.
-5. **StaticVsInstancePractice.java** – Belajar beda antara data/method milik class (static) dan milik objek (instance).
-   *(LibraryManagementSystem.java menerapkan semua konsep di atas.)*
+1. Inheritance (Pewarisan) - Class anak seperti Car dan Motorcycle dapat mewarisi properties dan method dari class parent seperti Vehicle. Ini membuat kode lebih efisien karena tidak perlu menulis ulang kode yang sama berulang kali.
+2. Method Overriding - Method yang diwarisi dari parent class bisa diubah implementasinya di class anak sesuai kebutuhan. Misalnya displayInfo() di Car menampilkan info berbeda dengan di Vehicle karena ada data tambahan.
+3. Access Modifier - Atribut protected bisa diakses langsung oleh subclass, sedangkan private harus pakai getter/setter. Ini penting untuk mengatur siapa saja yang boleh mengakses data.
+4. Getter dan Setter Methods - Method untuk mengambil dan mengubah nilai atribut private. Penting untuk menjaga keamanan data dan memudahkan maintenance kode.
+5. Polymorphism - Satu method bisa punya implementasi berbeda di tiap class. Contoh: hitungBiayaRental() untuk Car ada surcharge AC, untuk Motorcycle ada diskon, meski nama methodnya sama.
